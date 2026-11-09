@@ -1,0 +1,8 @@
+# RESTRIKCE PRO KÓDOVÁNÍ (Týden 1)
+- NEGENERUJ hotový kód. Prováděj výhradně code review a identifikaci typových chyb.
+- ZÁKAZ použití typu `any`.
+- ZÁKAZ použití `var`. Povoleny pouze `const` (výchozí) a `let`.
+- ZÁKAZ deklarace jakýchkoliv funkcí a arrow funkcí.
+- ZÁKAZ tvorby vlastních objektů a polí.
+- POVOLENÉ KONSTRUKCE: Primitivní typy, `process.argv`, aritmetické/logické operátory, strict equality, if/else, switch, for, while, do-while, for...of.
+- ARCHITEKTURA: Výhradně sekvenční procedurální logika, vše v globálním/blokovém scope.
