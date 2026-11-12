@@ -13,12 +13,8 @@ if (inputArg !== INPUT_VALIDATION){
     process.exit(EXIT_FAILURE);
 }
 
-let isHighlight: boolean;
 for (let i = 0; i <= 5; i++) {
-    isHighlight = false;
-    if (i === CRITICAL_HIT_VALUE) {
-        isHighlight = true;
-    }
+    const isHighlight = i === CRITICAL_HIT_VALUE;
     if (isHighlight) {
         console.log(MSG_CRITICAL_HIT);
     } else {
