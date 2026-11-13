@@ -10,8 +10,6 @@ const MSG_INVALID_INPUT_OPERATOR = 'You must enter all inputs properly. Operator
 const EXIT_FAILURE = 1;
 const MSG_DIVIDING_BY_ZERO = 'You can not divide any number with zero. Therefore operand2 can not be a 0, if chosen operation is division.';
 
-
-
 if (operatorInput === undefined || operand1Input === undefined || operand2Input === undefined) {
     console.error(MSG_UNDEFINED_INPUT);
     process.exit(EXIT_FAILURE);
