@@ -33,7 +33,7 @@ if (sequenceLimit === 0) {
 }
 
 for (; sequenceLimit >= lastNumOfSequence ;) {
-    console.log(lastNumOfSequence)
+    console.log(lastNumOfSequence);
     lastNumOfSequence = lastNumOfSequence + penultimateNumOfSequence;
     penultimateNumOfSequence = lastNumOfSequence - penultimateNumOfSequence;
 }

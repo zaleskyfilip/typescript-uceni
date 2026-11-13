@@ -1,13 +1,10 @@
 export {};
 
-const testedNumberInput = process.argv[2];
-
 const EXIT_FAILURE = 1;
 const MSG_UNDEFINED_INPUT = 'Input for tested number is mandatory.';
 const MSG_INVALID_INPUT = 'Input for tested number must be a valid positive whole number greater than 1.';
-const MSG_NUM_NOT_PRIME = `Number ${testedNumberInput} is not a prime number.`;
-const MSG_NUM_IS_PRIME = `Number ${testedNumberInput} is indeed a prime number.`;
 
+const testedNumberInput = process.argv[2];
 
 if (testedNumberInput === undefined) {
     console.error(MSG_UNDEFINED_INPUT);
@@ -32,11 +29,11 @@ for (let i = 1; i <= testedNumber; i++) {
         dividersCount++;
     }
     if (dividersCount === 3) {
-        console.log(MSG_NUM_NOT_PRIME);
+        console.log(`Number ${testedNumberInput} is not a prime number.`);
         break;
     }
     if (i === testedNumber) {
-        console.log(MSG_NUM_IS_PRIME);
+        console.log(`Number ${testedNumberInput} is indeed a prime number.`);
         break;
     }
 }
